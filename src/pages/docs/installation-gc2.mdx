@@ -24,9 +24,9 @@ import img_13 from '../../assets/images/gcp/13.jpeg';
 import img_14 from '../../assets/images/gcp/14.jpeg';
 import img_15 from '../../assets/images/gcp/15.jpeg';
 import img_16 from '../../assets/images/gcp/16.jpeg';
-import img_17 from '../../assets/images/gcp/17_steam_valve.jpeg';
-import img_18 from '../../assets/images/gcp/18_group_head.jpeg';
-import img_19 from '../../assets/images/gcp/19_brew_thermostat.jpeg';
+import img_17 from '../../assets/images/gcp/17.jpeg';
+import img_18 from '../../assets/images/gcp/18.jpeg';
+import img_19 from '../../assets/images/gcp/19.jpeg';
 import img_20 from '../../assets/images/gcp/20_bt_bridge.jpeg';
 import img_21 from '../../assets/images/gcp/21_thermocouple.jpeg';
 import img_22 from '../../assets/images/gcp/22_thermocouple.jpeg';
@@ -81,14 +81,15 @@ We recommend downloading and/or printing the [Classic Wiring](/downloads/GaggiMa
 This guide is referencing them.
 
 #### Check all the parts
-Check that you have all the parts ready to go. All parts needed are in the full kits (standard or pro).
+Check that you have all the parts ready to go. All parts needed are in the full kit (standard or pro).
 
 <div className="flex flex-row gap-4">
   <Preview src={img_01} width={400} alt="" />
   <Preview src={img_02} width={400} alt="" />
-
 </div>
 
+#### NOTE: if your machine has faulty parts (switches, pump, solenoid valve, ...) the GaggiMate will not magically heal it!
+(* that does not apply to blown thermostats, since they will be replaced)
 
 #### Check the screen
 
@@ -163,38 +164,106 @@ Now you can easily Remove the clamp. It is cut on the bottom so you can lead the
 Tilt the switches section as shown above.
 
 <div className="flex flex-row gap-4">
-  <Preview src={img_15} width={400} alt="" />
-  <Preview src={img_16} width={400} alt="" />
-</div>
-
-Now use the labels that you printed or tape to label all the connections, we will refer to those by their number/name in the following steps.
-
-### Heater modifications
-
-#### Brew thermostat
-
-<div className="flex flex-row gap-4">
-  <Preview src={img_17} width={400} alt="" />
-  <Preview src={img_18} width={400} alt="" />
-</div>
-
-In order to make uninstallation of the brew thermostat as well of installation of the thermocouple easier, it's recommended to loosen the steam valve assembly and unscrew the group head from the case so you're able to tilt the boiler assembly.
-
-<div className="flex flex-row gap-4">
-  <Preview src={img_19} width={400} alt="" />
   <Preview src={img_20} width={400} alt="" />
-</div>
+<Preview src={img_21} width={400} alt="" />
+  </div>
 
-By tilting the boiler you can easily access the brew thermostat, unscrew it and bridge the connections BT.A and BT.B with the small red jumper.
+Compare your stock wiring with the [Classing Wiring Schematics](/downloads/Classic_Wiring.pdf). In case something, i.e. your wire coloring, differs from the PDF, you should be able to understand and adapt the guide to your indvidual machine.
+##The next steps will follow steps 1 through 9 of the PDF.
+
+
+#### OPTIONAL/ RECOMMENDED 
 
 <div className="flex flex-row gap-4">
   <Preview src={img_21} width={400} alt="" />
   <Preview src={img_22} width={400} alt="" />
+<Preview src={img_23} width={400} alt="" />
 </div>
+
+We recommend making mor room in order to more easily access the parts and wires:
+- With an allen key: unscrew the 4 screws that hold the boiler
+- Unscrew and remove the steam wand
+- Do not forget the gascet
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_24} width={400} alt="" />
+  <Preview src={img_25} width={400} alt="" />
+<Preview src={img_26} width={400} alt="" />
+</div>
+
+- Remove the steam knob by pulling it firmly #make sure you do not loose the metal spring inside the knob.
+- Remove the heat protection disc by also pulling it off.
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_27} width={400} alt="" />
+  <Preview src={img_28} width={400} alt="" />
+  <Preview src={img_29} width={400} alt="" />
+  <Preview src={img_30} width={400} alt="" />
+</div>
+
+- Find the black overpressure hose on the 3 way solenoid.
+- Use pliers to loosen the clamp and move it up the hose.
+- Remove the hose from the solenoid.
+
+
+### Heater modifications
+
+#### 1 Brew thermostat
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_31} width={400} alt="" />
+  <Preview src={img_32} width={400} alt="" />
+</div>
+
+Free the clamp that is also holding the grounding wire.
+
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_33} width={400} alt="" />
+  <Preview src={img_34} width={400} alt="" />
+</div>
+
+Find the brew thermostat at the boiler; it is the one on the SIDE.
+Unplug the wires BT.A and BT.B.
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_35} width={400} alt="" />
+  <Preview src={img_36} width={400} alt="" />
+<Preview src={img_37} width={400} alt="" />
+</div>
+
+Since you can now easily tilt and shift the boiler, unscrew the thermostat with a 17mm wrench. 
+Put it aside- it is not needed anymore.
+Bridge the 2 wires BT.A and BT.B. with the <u>red Heater bridge cable</u>.
+
+#### 2 Steam thermostat
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_38} width={400} alt="" />
+  <Preview src={img_39} width={400} alt="" />
+
+</div>
+
+Find the steam termostat on TOP of the boiler. Unplug the wires ST.A and ST.B
+
+
+
+<div className="flex flex-row gap-4">
+  <Preview src={img_40} width={400} alt="" />
+  <Preview src={img_41} width={400} alt="" />
+
+</div>
+
+Extend the wires ST.A and ST.B with the <u>yellow Heater to SSR cable</u>
+Plug the spade end of the <u>yellow Heater to SSR cable</u> into the OUTPUT side of the SSR and tighten the screws.
+The thermostat can remain in the boiler or (recommended) be removed. 
+
+
+
+####  Steam thermostat
 
 Now that the brew thermostat is removed from the boiler you can screw in the M4 thermocouple into the boiler. Be careful to rotate the wire as you screw it in and only fasten it hand tight. The thermocouple can easily be damaged.
 
-#### Steam thermostat
 
 <div className="flex flex-row gap-4">
   <Preview src={img_34} width={400} alt="" />
