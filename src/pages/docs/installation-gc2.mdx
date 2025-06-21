@@ -392,7 +392,7 @@ Make sure you <strong>do not drill or twist the '-' and '+' ends of the sensor</
 move them along with every turn of the M4 end. 
 
 
-#### 12 Pressure sensor
+#### 12 Pressure sensor and plumbing - only for Gaggimate pro!
 
 <div className="flex flex-row gap-4">
  <Preview src={img_72} width={400} alt="" />
@@ -454,118 +454,30 @@ Make sure there are no bubbles/ air in the sensor.
 
 Install the <u>pressure sensor</u> between the pump and the 3 way solenoid.
 
+#### 13 Screen wirung
 
+<div className="flex flex-row gap-4">
+ <Preview src={img_89} width={400} alt="" />
+<Preview src={img_90} width={400} alt="" />
+<Preview src={img_91} width={400} alt="" />
+</div>
 
-####  Steam thermostat
+Use the <u>Screen power cable</> and plug it into the side of the screen.
+You may have to trim the edges of the connector of the screen side of the cable in order to plug it in smoothly.
 
-Now that the brew thermostat is removed from the boiler you can screw in the M4 thermocouple into the boiler. Be careful to rotate the wire as you screw it in and only fasten it hand tight. The thermocouple can easily be damaged.
+#### 14 PCB wiring.
 
 
 <div className="flex flex-row gap-4">
-  <Preview src={img_34} width={400} alt="" />
-  <Preview src={img_35} width={400} alt="" />
+ <Preview src={img_92} width={400} alt="" />
+<Preview src={img_93} width={400} alt="" />
+<Preview src={img_94} width={400} alt="" />
 </div>
 
-Remove the connections labeled ST.A and ST.B from the steam thermostat and extend them with the two yellow AWG18 wires. You can choose to either remove the steam thermostat or leave it in place.
+Plug-in the ends of the cables into the PCB sockets. Note that they are marked on the PCB. 
+Make sure the loose wires are fully inserted and cannot be pulled out.
+Your Gaggimate controller should look like the last picture above when done.
 
-<Preview src={img_36} width={400} alt="" />
-
-Mount the SSR on the back slots of the machine with either M4 screws and bolts or zip ties. Connect the two yellow cables to Output side of the SSR (polarity does not matter) as well as the Yellow/Black Signal cable to the Input side. (Yellow = +, Black = -)
-
-### HV Wiring
-
-#### Steam Switch
-
-<Preview src={img_24} width={400} alt="" />
-
-The picture above shows how the steam switch is wired by default. On a machine without the Eco PCB, the green wire labeled S.1 would be missing.
-
-<Preview src={img_25} width={400} alt="" />
-
-Remove the S.5 (white) from the left side of the steam switch (or the monoblock connector, you can push the connectors out with a screwdriver) and use the blue cable from the wiring kit to extend is to the N/Neutral connector of the PCB.
-
-<Preview src={img_26} width={400} alt="" />
-
-Remove S.1 from the switch if it is present and move S.4 (black) to that position. Afterwards the wiring of the switch should look like in the above picture. Use tape to make sure the connections or removed connectors are properly insulated.
-
-#### Brew switch
-
-<Preview src={img_27} width={400} alt="" />
-
-The picture above shows how the brew switch is wired by default. On a machine without the Eco PCB, the wires labeled C.1 and C.2 would be missing.
-
-<Preview src={img_28} width={400} alt="" />
-
-If you do have the Eco PCB, you deactivate it in this step by bridging the wires C.1 and C.2 with the short yellow jumper from the wiring kit.
-
-<Preview src={img_29} width={400} alt="" />
-
-Now remove C.4 (brown) from the brew switch and extend it with the grey cable from the wiring kit to the L/Line connector of the PCB.
-
-<Preview src={img_30} width={400} alt="" />
-
-When you're done, the brew switch (or monoblock connector) should look like this. Again, make sure to insulate any connections.
-
-#### Pump/Three way valve
-
-<Preview src={img_32} width={400} alt="" />
-
-Remove the connector PMP.B (the one that doesn't go into the thermal fuse on the pump) from the pump and extend it with the red wire from the wiring kit to the V/Valve connector of the PCB.
-
-<Preview src={img_33} width={400} alt="" />
-
-Now connect the green wire from the wiring kit to the pump where PMP.B was previously connected and run it to the P/Pump connector of the PCB.
-
-### LV Wiring
-
-#### Button functionality
-
-You can choose to retain the functionality of the buttons by using the green/black 4-wire cable from the wiring kit. Connect a green and black wire (check the pinout for steam/brew) to the free sides of both switches (Positions C.1, C.2, S.4, S.5).
-If you have the monoblock, you should put those back first and then push the connectors in there. Make sure never to mix up high and low voltage.
-
-<Preview src={img_31} width={400} alt="" />
-
-#### PCB
-
-<div className="flex flex-row gap-4">
-  <Preview src={img_37} width={400} alt="" />
-  <Preview src={img_38} width={400} alt="" />
-</div>
-
-Connect the JST PH connectors to the PCB and you can either place it in the corner of the casing now for Standard or do this after you install the pressure parts for GaggiMate Pro.
-
-#### Screen
-
-<Preview src={img_46} width={400} alt="" />
-
-Run the red/black cable from the PCB to the screen and connect it to the 4 pin connector. The cable has enough space to be routed between the cup warmer and casing. The screen casing simply sits on the edge of the housing. Some machines have a slightly thicker paint so if you have trouble getting the casing on, you can use a nail file or sand paper in the groove.
-
-### Plumbing / Pressure installation
-
-Follow this part only if you're installing GaggiMate Pro.
-
-#### Transducer assembly
-
-<Preview src={img_39} width={400} alt="" />
-
-Prepare the cable of the transducer by cutting off a bit of the black insulation and stripping the wires to 11mm.
-
-<div className="flex flex-row gap-4">
-  <Preview src={img_40} width={400} alt="" />
-  <Preview src={img_41} width={400} alt="" />
-  <Preview src={img_42} width={400} alt="" />
-  <Preview src={img_43} width={400} alt="" />
-</div>
-
-Gather all the plumbing parts from the kit and start by placing the little gasket inside of the barbs connector. Screw the transducer into the barbs connector. You want it tight enough so it doesn't leak but not so tight that the gasket is pushed out and blocks the transducer.<br />
-Cut 15-20cm of the tube and connect it to the transducer, secure it with hose clamps. Fill this tube with water and connect the other side to the T-fitting. You can choose to either cut the original hose of the machine in the middle and add your T-fitting there or add a short piece on one end of the T-fitting so you don't need to modify the original hose.
-
-<div className="flex flex-row gap-4">
-  <Preview src={img_44} width={400} alt="" />
-  <Preview src={img_45} width={400} alt="" />
-</div>
-
-Place the T-fitting inline with the pump (In this example i've opted to simply extend the original tube for a non-destructive installation. You can loosen the Oetiker clamps with a flathead screwdriver). Make sure everything is tightened securely and place the transducer at the bottom of the casing.<br />
 
 #### Pressure test
 
